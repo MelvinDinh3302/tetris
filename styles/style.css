@@ -99,7 +99,7 @@ h1 {
     
 }
 .links a:hover {
-    color: #0056b3;
+    color: #ffcc00;
 }
 
 .highlight {
@@ -114,9 +114,12 @@ h1 {
         width: 30%;
         margin: 10px 5px;
     }
+    /* #major img {
+        width: 60%;
+    } */
 }
 
-/* #toggleMotionButton {
+#toggleMotionButton {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -133,7 +136,7 @@ h1 {
     font-size: 1.5rem;
     color: #fff;
     transition: background-color 0.3s;
-} */
+}
 
 @media (prefers-reduced-motion: reduce) {
     h1 {
@@ -172,6 +175,7 @@ h1 {
     border: 2px solid #ddd;
     border-radius: 5px;
     margin: auto;
+    width: 100%;
 }
 
 #major .image-container {
