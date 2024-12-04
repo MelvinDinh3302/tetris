@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Tetris Guide</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="scripts/script.js"></script>
+    <link rel="icon" href="images/tetris-ico.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="basics.html">Basics</a></li>
+            <li><a href="stacking.html">6-3 Stacking</a></li>
+            <li><a href="tspin.html">T-spin</a></li>
+            <li><a href="openers.html">Openers</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+    </nav>
+    <h1>BASICS</h1>
+    <section id="major">
+        <h2>Multiplayer</h2>
+        <p>The multiplayer aspect in modern Tetris is one of its most exciting and dynamic features.</p>
+        <p><b>Versus</b>: Two players face off against each other. This can be a simple head-to-head match or a tournament format where players battle in a bracket until a winner is determined.</p>
+        <figure>
+        <img src="images/versus.png" alt="Versus Mode" />
+        <figcaption>Versus Mode</figcaption>
+        </figure>
+        <p><b>Battle Royale</b>: Players compete against other players in a last-player-standing mode. Players can choose to target specific opponents or opt for a random match.</p>
+        <figure>
+        <img src="images/royale.png" alt="Last One Standing Mode" />
+        <figcaption>Last One Standing Mode</figcaption>
+        </figure>
+        <h2>7-Bag System</h2>
+        <p>The 7-bag system is a random sequence that controls the order of Tetriminos (the seven types of pieces in Tetris).</p>
+        <p>Instead of having a truly random order like in classic tetris, the 7-bag system ensures that each of the seven different Tetriminos appears once before any piece is repeated. 
+            This prevents situations where a player is waiting for a specific piece for an extended period.</p>
+        <p>More in-depth explanation:</p>
+        <iframe title="7-Bag System"
+        src="https://www.youtube.com/embed/uX5btMAge5M">
+        </iframe>
+
+        <h2>Garbage</h2>
+        <p>Garbage is a form of "attack" in multiplayer Tetris. 
+        When players clear multiple lines at once (e.g., using a Tetris, T-spin, or combo), it can send garbage lines to opponents.
+        The more rows you clear at once or consecutively, the more garbage rows are sent to your opponent.</p>
+        <p>The below table shows the general garbage lines sent in most guideline games. Some games will deviate from this.</p>
+        <table class="wikitable">
+        <tbody><tr>
+        <th>Clear Type
+        </th>
+        <th>Rows Cleared
+        </th>
+        <th>Garbage Rows Sent
+        </th></tr>
+        <tr>
+        <td>Single</td>
+        <td>1</td>
+        <td>0
+        </td></tr>
+        <tr>
+        <td>Double</td>
+        <td>2</td>
+        <td>1
+        </td></tr>
+        <tr>
+        <td>Triple</td>
+        <td>3</td>
+        <td>2
+        </td></tr>
+        <tr>
+        <td>Tetris</td>
+        <td>4</td>
+        <td>4
+        </td></tr>
+        <tr>
+        <td>Mini T-Spin Single</td>
+        <td>1</td>
+        <td>0
+        </td></tr>
+        <tr>
+        <td>Mini T-Spin Double</td>
+        <td>2</td>
+        <td>1
+        </td></tr>
+        <tr>
+        <td>T-Spin Single</td>
+        <td>1</td>
+        <td>2
+        </td></tr>
+        <tr>
+        <td>T-Spin Double</td>
+        <td>2</td>
+        <td>4
+        </td></tr>
+        <tr>
+        <td>T-Spin Triple</td>
+        <td>3</td>
+        <td>6
+        </td></tr>
+        <tr>
+        <td>Back-to-Back Bonus</td>
+        <td>0</td>
+        <td>+1 (MTSS, MTSD; TSS), +2 (TSD; Tetris); +3 (TST)
+        </td></tr>
+        <tr>
+        <td>Perfect clear</td>
+        <td>1-4</td>
+        <td>10
+        </td></tr></tbody></table>
+
+        <h2>Terminology</h2>
+        <p><b>T-spin</b>: Advanced maneuver that involves rotating a T-shaped piece into a tight space to clear lines. It is a more complicated than a regular line-clear and is often used by experienced players to maximize garbage lines sent to opponents.</p>
+        <p><b>Perfect Clear</b>: Highly challenging and rewarding accomplishment where a player clears the entire playfield of all blocks, leaving no leftover pieces behind. Rarely happens in a normal match.</p>
+        <p><b>Back-to-Back Combo</b>: Occurs when players clear lines multiple times in succession, with each line clear following directly after the previous one.</p>
+        <p><b>PPS</b>: Pieces per Second.</p>
+        <p><b>APM</b>: Attacks per Second.</p>
+        <p><b>Finesse</b>: Refers to the skill of placing and rotating pieces with minimal effort and zero unnecessary movements. The mantra being any Tetrimino can be placed in any location using three or fewer actions.</p>
+
+        <h2>Brief Overview Video</h2>
+        <iframe title="Modern Tetris Basics"
+        src="https://www.youtube.com/embed/xoxKZIMgN9c">
+        </iframe>
+    </section>
+
+    <!-- Miscellaneous elements -->
+    <button id="homeButton" aria-label="Home Button">
+        <i class="fas fa-home"></i>
+    </button>
+    <button id="scrollButton" aria-label="Scroll to Top Button">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-image" src="" alt="Expanded view" />
+    </div>
+
+</body>

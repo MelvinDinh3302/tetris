@@ -1,3 +1,9 @@
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,11 +14,13 @@ body {
     background-attachment: fixed;
     background-position: center;
     color: #333;
+    /* align-items: center; */
 }
 
 nav {
     background-color: #445b7c;
     padding: 1rem;
+    /* width: 100vw; */
 }
 
 nav ul {
@@ -121,8 +129,6 @@ h1 {
 
 button {
     position: fixed;
-    /* bottom: 20px;
-    right: 20px; */
     width: 50px;
     height: 50px;
     background-color: #007BFF;
@@ -136,6 +142,10 @@ button {
     font-size: 1.5rem;
     color: #fff;
     transition: background-color 0.3s;
+}
+
+button:active{
+    background-color:#FFFF00;
 }
 
 #homeButton {
@@ -185,7 +195,7 @@ button {
     border: 2px solid #ddd;
     border-radius: 5px;
     margin: auto;
-    width: 100%;
+    width: 80%;
 }
 
 #major .image-container {
@@ -247,8 +257,6 @@ button {
 }
 
 .lightbox-image {
-    max-width: 90%;
-    max-height: 90%;
     border: 5px solid white;
     border-radius: 8px;
 }
@@ -262,3 +270,27 @@ button {
     cursor: pointer;
     user-select: none;
 }
+
+  .wikitable {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 1em;
+      text-align: left;
+  }
+
+  .wikitable th,
+  .wikitable td {
+      border: 1px solid #ddd;
+      padding: 8px;
+  }
+
+  .wikitable th {
+      background-color: #007BFF;
+      color: white;
+      text-transform: uppercase;
+  }
+
+  .wikitable tr:hover {
+      background-color: #bdddff;
+  } 
