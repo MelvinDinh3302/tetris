@@ -112,9 +112,23 @@ h1 {
 }
 
 .highlight {
-    border: 5px solid rgba(255, 255, 0, 0.5);
+    border: 5px dashed rgba(255, 255, 0, 0.5);
         /* Transparent yellow border */
-    color: #fff;
+    animation: tether-swing 2s ease-in-out infinite;
+}
+
+@keyframes tether-swing {
+    0% {
+        transform: translateX(0%) rotate(10deg);
+    }
+
+    50% {
+        transform: translateX(0%) rotate(-10deg);
+    }
+
+    100% {
+        transform: translateX(0%) rotate(10deg);
+    }
 }
 
 @media (min-width:801px) {
@@ -143,6 +157,7 @@ button {
     font-size: 1.5rem;
     color: #fff;
     transition: background-color 0.3s;
+    z-index: 10;
 }
 
 button:active{
@@ -162,6 +177,9 @@ button:active{
 @media (prefers-reduced-motion: reduce) {
     h1 {
         color: #fff;
+        animation: none;
+    }
+    .highlight {
         animation: none;
     }
 }
@@ -212,7 +230,7 @@ button:active{
 }
 
 /* Styling for individual images */
-#major .image-container img {
+#major .image-container img, #major .image-container figure {
     /* Limit image size */
     height: auto;
     display: block;
@@ -260,7 +278,7 @@ button:active{
 .lightbox-image {
     border: 5px solid white;
     border-radius: 8px;
-    object-fit: contain;
+    min-width: 200px;
 }
 
 .close {

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Tetris Guide</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="scripts/script.js"></script>
+    <link rel="icon" href="images/tetris-ico.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="basics.html">Basics</a></li>
+            <li><a href="stacking.html">6-3 Stacking</a></li>
+            <li><a href="tspin.html">T-spin</a></li>
+            <li><a href="openers.html">Openers</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+    </nav>
+    <h1>T-SPIN</h1>
+    <section id="major">
+        <h2 tabindex="0">Introduction</h2>
+        <p>A T-spin is a specialized maneuver where a T-shaped piece is 
+            rotated into a space that it could not simply drop 
+            into without the rotation. This move is a critical technique 
+            in competitive and advanced Tetris play due to the high damage 
+            it can output with only a few lines cleared.</p>
+        <p>A T-spin (Single / Double / Triple) sends (2 / 4 / 6) lines of garbage. </p>
+        <p>In other words, a T-spin Double deals as much damage as a Tetris with only half the number of lines cleared.</p>
+
+        <figure tabindex="0">
+        <img src="images/tspin.jpg" alt="6-3 Stacking"/>
+        <figcaption>A Player About to Perform a T-spin Double</figcaption>
+        </figure>
+
+        <h2 tabindex="0">How to Perform a T-spin?</h2>
+        <ol>
+            <li><p>Ensure your stack has the right shape to accommodate the T-Spin</p></li>
+            <li><p>Drop the T-Tetrimino so it hovers just above the gap</p></li>
+            <li><p>Use the rotation button to spin the T-piece into the gap.</p></li>
+            <li><p>The piece should "snap" into position thanks to the rotation mechanics.</p></li>
+        </ol>
+
+        <div class="image-container">
+            <figure tabindex="0">
+            <img src="images/Animatedtspin.gif" alt="T-Spin Double"/>
+            <figcaption>T-Spin Double</figcaption>
+            </figure>
+            <figure tabindex="0">
+            <img src="images/Animatedtspin3.gif" alt="T-Spin Triple"/>
+            <figcaption>T-Spin Triple</figcaption>
+            </figure>
+        </div>
+        <h2 tabindex="0">T-spin Setups</h2>
+        <p><b>Triple Setups</b>:</p>
+            <div class="image-container">
+                <img src="images/setup3t2.png" alt="Triple LSZ" tabindex="0"/>
+                <img src="images/setupt3.png" alt="Triple LZJ" tabindex="0"/>
+
+            </div>
+        <p><b>Double Setups</b>:</p>
+            <div class="image-container">
+                <img src="images/setup00.png" alt="Double I" tabindex="0"/>
+                <img src="images/setup10.png" alt="Double J" tabindex="0"/>
+                <img src="images/setup20.png" alt="Double L" tabindex="0"/>
+                <img src="images/setup30.png" alt="Double S" tabindex="0"/>
+                <img src="images/setup40.png" alt="Double T" tabindex="0"/>
+                <img src="images/setup50.png" alt="Double Z" tabindex="0"/>
+                <img src="images/setup60.png" alt="Double O" tabindex="0"/>
+            </div>
+
+        <h2 tabindex="0">Quick Tutorial Video</h2>
+        <iframe title="6-3 Stacking Tutorial"
+        src="https://www.youtube.com/embed/4KfUlhkXjcE">
+        </iframe>
+    </section>
+
+    <!-- Miscellaneous elements -->
+    <button id="homeButton" aria-label="Home Button">
+        <i class="fas fa-home"></i>
+    </button>
+    <button id="scrollButton" aria-label="Scroll to Top Button">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-image" alt="Expanded view" />
+    </div>
+
+</body>
