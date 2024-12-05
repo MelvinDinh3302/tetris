@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Add highlight when clicked on navbar item
-    if (window.location.pathname.endsWith("index.html") || window.location.pathname === "/") {
+    if (document.body.classList.contains("index-page")) {
+      const navItems = document.querySelectorAll("nav ul li");
+      const links = document.querySelectorAll(".links a");
 
-        const navItems = document.querySelectorAll("nav ul li");
-        const links = document.querySelectorAll(".links a");
+      navItems.forEach((navItem, index) => {
+        navItem.addEventListener("click", () => {
+          links.forEach((link) => link.classList.remove("highlight"));
 
-        navItems.forEach((navItem, index) => {
-            navItem.addEventListener("click", () => {
-            links.forEach((link) => link.classList.remove("highlight"));
-
-            if (links[index]) {
-                links[index].classList.add("highlight");
-            }
-            });
+          if (links[index]) {
+            links[index].classList.add("highlight");
+          }
         });
+      });
     }
 
     //Add home button function
